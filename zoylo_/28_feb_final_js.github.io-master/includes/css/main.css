@@ -1,0 +1,137 @@
+.search-list {
+    padding: 5px;
+}
+
+.search-list>li .doc-image {
+    width: 80px;
+    height: 80px;
+    margin: 0 20px 0 0;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+@media only screen and (max-width: 990px) {
+.doc-image {
+    margin: 0 0 20px;
+}
+.doc-image {
+    width: 80px;
+    margin: 0 20px 0 0;
+}
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.m-0 {
+    margin: 0!important;
+}
+
+.font14 {
+    font-size: 1.4rem;
+}
+
+.grey-text {
+    color: #6d6e70;
+}
+
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+p {
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.mr-3, .mx-3 {
+    margin-right: 1rem!important;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.search-list>li.active, .search-list>li:hover {
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.25);
+}
+
+.search-list>li {
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.search-list>li.active .btn, .search-list>li:hover .btn {
+    visibility: visible;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.search-list>li .book-appointment {
+    visibility: hidden;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.search-list>li .btn {
+    visibility: hidden;
+}
+.btn.btn-primary {
+    background: #faa74a;
+    border-color: #faa74a;
+    color: #fff;
+}
+
+.btn {
+    padding: 8px 20px;
+    color: #fff;
+    line-height: 15px;
+    text-shadow: none;
+    line-height: normal;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-family: DINPro-Medium;
+}
+
+
+@media only screen and (max-width: 1400px) {
+.listing {
+    padding: 0px 30px;
+}
+
+.listing {
+    padding: 0 100px 50px;
+    overflow: hidden;
+}
+}
+
+@media (min-width: 576px) {
+    .col-sm-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    }
+}
+
+div {
+    display: block;
+}

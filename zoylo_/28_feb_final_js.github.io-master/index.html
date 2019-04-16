@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zoylo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=key=AIzaSyB4Mkj-xZOe7Dcg5voCoY1TahMAkGo9_mo&libraries=geometry"></script>
+    <link rel="stylesheet" href="zoylostyle.css">
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4Mkj-xZOe7Dcg5voCoY1TahMAkGo9_mo&callback=initMap">
+        </script>
+    <script src="zoylojson.js"></script>
+    <script src="zoylojavascript.js"></script>
+
+</head>
+
+<body onload="zoyloContent(data)">
+
+    <div class="container-fluid">
+
+        <!--header here-->
+        <header>
+            <div class="row">
+                <div class="col-md-8"><img class="logo" src="logo.png" alt="logo">
+                    <button class="option--button" onclick="option_tab()"><i class="fa fa-bars"></i></button>
+                    <input class="websearch-bar" type="search" placeholder="Search Doctor's Name or Specialization or Clinic Name or Hospital Name" name="search">
+                    <button class="websearch-button"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="col-md-4">
+                    <a class="login_bar" href="#home">Login/Sign Up</a>
+                </div>
+
+            </div>
+        </header>
+        <!-- header ends here -->
+
+        <!-- main content section here-->
+        <!-- option_tab_bar on click the header button -->
+        <div class="option_tab_bar" id="option_tab_bar">
+sdfg
+        </div>
+        <div class="row main_area_content">
+
+            <!--left side content section here-->
+            
+            <div class="col-sm-7 zoylo_left_section_content" id="left_side_content">
+                
+
+            </div>
+            <!--left side content section ends here-->
+
+            <!--right side content section here-->
+
+            <!--map / booking content here section-1-->
+            <!--map div-->
+            <div id="zoylo_right_section_content_1" class="col-sm-5 zoylo_right_section_content_1">
+                <div id="map"></div>
+                <div id="book">
+                    <h2>content area</h2>
+                    <button id="remove" class="btn"><i class="fa fa-close"></i></button>
+                </div>
+            </div>
+
+            <!--booking div  section-2 -->
+            <div id="zoylo_right_section_content_2" class="col-sm-5 zoylo_right_section_content_2">
+
+                <!-- upper cross div -->
+                <div class="cross_button">
+                    <button class="cancel_btn btn1 " id="cancel_appointment_btn" onclick="cancel_button()"><i
+                            class="fa fa-times"></i></button>
+                </div>
+
+                <!-- hospital info div -->
+                <div class="upper_data">
+                    <h4 id="hospital_name">
+                        <!--<script>document.write(hospital_name);</script>-->
+                    </h4>
+                    <h5 id="hospital_location">
+                        <!--<script>document.write(hospital_location);</script>-->
+                    </h5>
+                    <hr>
+                    <h6 id="hospital_detail">
+                        <!--<script>document.write(hospital_detail);</script>-->
+                    </h6>
+                </div>
+
+                <!-- availability info div -->
+                <div class="middle_data">
+                    <!-- avalability days here -->
+                    <div>
+                        <ul class="ul_style">
+
+                            <li id="avail"><b>Availability</b></li>
+
+                            <li class="active_style">sun</li>
+                            <li class="li_style" id="avail_days">mon</li>
+                            <li class="li_style" id="avail_days">tue</li>
+                            <li class="li_style" id="avail_days">wed</li>
+                            <li class="li_style" id="avail_days">thu</li>
+                            <li class="li_style" id="avail_days">fri</li>
+                            <li class="li_style" id="avail_days">sat</li>
+                        </ul>
+                    </div>
+
+                    <div id="main_time_div">
+                        <div class="buttons_area">
+                            <!-- time toggle button here -->
+                            <button id="time_interval" class="btn_style" onclick="show_hide(0)"><b>Time</b></button> |
+                            <!-- Amenities toggle button here -->
+                            <button id="Amenities_interval" class="btn_style"
+                                onclick="show_hide(1)"><b>Amenities</b></button>
+                        </div>
+
+                        <!-- calender -->
+                        <div class="time_slot" id="time_slot">
+                            <div class="calender_div">
+
+                                <span><i class="fa fa-calendar "></i></span>
+                                <input type="date" name="date" id="input_box_date" class="calender_div_style">
+
+                            </div>
+
+                            <!-- time div -->
+
+                            <ul class="ul_style">
+                                <a class="" onclick="morning_btn()">
+                                    <li class="timing_list li_style">
+                                        <p><i class="fa fa-sun-o"></i> MORNING
+                                        </p>
+                                    </li>
+                                </a>
+                                <a class="" onclick="after_btn()">
+                                    <li class="timing_list li_style">
+                                        <p><i class="fa fa-cloud"></i> AFTERNOON
+                                        </p>
+                                    </li>
+                                </a>
+                                <a class="" onclick="evening_btn()">
+                                    <li class="timing_list li_style">
+                                        <p><i class="fa fa-star-o"></i> EVENING
+                                        </p>
+                                    </li>
+                                </a>
+                                <a class="" onclick="night_btn()">
+                                    <li class="timing_list li_style">
+                                        <p><i class="fa fa-moon-o"></i> NIGNT
+                                        </p>
+                                    </li>
+                                </a>
+                            </ul>
+
+                            <div id="time_slot_div_" class="time_slot_div_">
+
+                                <div id='div_time_btn'>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- amenties div -->
+                    <div class="ameties_div" id="ameties_div">
+                        <h5><i class="fa fa-circle-o"></i> car parking</h5>
+                        <h5><i class="fa fa-circle-o"></i> bike parking</h5>
+                    </div>
+                </div>
+                <div class="bottom_data ">
+                    <div class="bottom_style_left">
+                        <h4><b>Total Amount: ₹100</b></h4>
+                    </div>
+                    <div class="bottom_style_right">
+
+                        <!-- popup starts here -->
+
+                        <!-- Trigger the modal with a button -->
+                        <button id="confirm_btn_dis" class="btn1 btn_styling" data-toggle="modal" data-target="#myModal"
+                            onclick="store_data()">CONFIRM
+                            APPOINTMENT</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Status:</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p> booking confirmed </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <!--popup ends here-->
+                    </div>
+
+                </div>
+
+                <!-- confirm appointment div -->
+            </div>
+
+            <!--//right side content section ends here\\-->
+        </div>
+        <!-- main content section ends here-->
+
+        <!--footer section here-->
+        <div class="row">
+            <div class="col-sm-12 footer">
+                <div class="">
+                    <div class="footer-right">© 2019 Copyright:
+                        <a href="#"> Zoylo.com</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!--footer section ends here-->
+    </div>
+
+</body>
+
+</html>

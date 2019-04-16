@@ -1,0 +1,867 @@
+body {
+    background-color: #f8f8f8;
+}
+/* ////basic page styling here\\\\ */
+.zoylo_header{
+    top: 0px;
+    z-index: 1;
+    height: 110px;
+    background-color: rgb(28, 28, 138);
+    width: 100%;
+    position: fixed;
+}
+
+.zoylo_left_section_content{
+    height: 600px;
+    
+}
+
+.zoylo_right_section_content_1{
+    height: 600px;
+    
+}
+
+.zoylo_right_section_content_2{
+    height: 500px;
+    display: none;
+    margin-top: 80px;
+}
+
+.main_area_content{
+    margin-top: 10px;
+}
+
+/* ////basic page styling ends here\\\\   */
+
+/*header*/header {
+      overflow: hidden;
+      background-color: #232176;
+      padding: 20px ;
+      margin-left: -15px;
+      z-index: 1;
+      position: fixed;
+      width: 120%;
+    }
+
+    .logo {
+      padding-left: 0px;
+      height: 45px;
+      width: 100px;
+    }
+
+    header a.active {
+
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      vertical-align: -15px;
+      padding-left: 115px;
+    }
+
+    .header-right {
+      padding-left: 100px;
+    }
+
+    .websearch-bar {
+      margin-left: 25px;
+      width: 750px;
+      margin-top: 10px;
+      height: 34px;
+
+
+    }
+
+    .option--button {
+      margin-left: 40px;
+      margin-top: 10px;
+      background-color:#fff;
+      border: 0px;
+      height: 32px;
+      width: 32px;
+    }
+
+    .option--button:hover{
+        background-color: #f1ad5f;
+    }
+
+    .websearch-button {
+      margin-left: -35px;
+      margin-top: 10px;
+      height: 32px;
+      background: #f1ad5f;
+      border-color: black;
+      border-radius: 5px;
+      width:30px;
+    }
+/*ends header*/
+
+
+
+/* \\\\page header styling here//// */
+.font14_header {
+    font-size: 1.4rem;
+    color: #c7c8ca;
+    font-weight: bold;
+}
+
+.head_img {
+    height: 34px;
+    width: 100px;
+    vertical-align: center;
+}
+/* ////page header styling ends here\\\\ */
+
+
+/* option_tab_bar */
+.option_tab_bar{
+    width: 300px;
+    height: 90px;
+    background-color:black;
+    display: none;
+}
+/*option_tab_bar ends here*/
+
+/* left content styling here */
+.active {
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    height: 150px;
+    background-color: whitesmoke;
+}
+.active:hover {
+    display: block;
+    width: 100%;
+    height: 150px;
+    box-shadow: 1px;
+    background-color: rgb(172, 169, 169);
+}
+
+.cardBorder {
+    border-right: 1px solid rgba(0, 0, 0, 0.2)
+    
+}
+
+.doc-clinic-details {
+    position: relative;
+}
+.pl-md-4, .px-md-4 {
+    padding-left: 1.5rem !important;
+}
+.h-100 {
+    height: 100% !important;
+}
+.justify-content-around {
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important;
+}
+.flex-column {
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.active:hover .btn {
+    display: block;
+}
+.search-list {
+    padding: 5px;
+}
+
+.img-fluid, .img-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+.image {
+    width: 100%;
+    height: 100px;
+}
+.search-list>li .doc-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+@media only screen and (max-width: 990px) {
+.doc-image {
+    margin: 0 0 20px;
+}
+.doc-image {
+    width: 80px;
+    margin: 0 20px 0 0;
+}
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.m-0 {
+    margin: 0!important;
+}
+
+
+.m-1 {
+    margin-top: 25px;
+}
+
+.font-medium {
+    color: rgba(20, 4, 4, 0.5);
+    font-family: DINPro-Medium;
+}
+
+.font-medium:hover {
+    font-weight: bold;
+    color: orange;
+    font-family: DINPro-Medium;
+}
+
+.font14 {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.font14:hover {
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
+}
+    
+.grey-text {
+    padding-top: 10px;
+    color: #6d6e70;
+}
+
+.loc {
+    padding-left: 5px;
+}
+
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+p {
+    line-height: normal;
+    margin-top: 6px;
+    margin-bottom: 1rem;
+}
+
+.m-1 {
+    margin-top: 25px;
+}
+
+.font12 {
+    font-size: 1.2rem !important;
+    margin-left: 1px;
+}
+
+h5{
+    font-family: DINPro-Medium;
+    color: #1d2d3d;
+    font-size: 1.25rem;
+    font-size: 1.8rem !important;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.mr-3, .mx-3 {
+    margin-right: 1rem!important;
+}
+
+.scrollbar {
+  margin-top: 110px;
+  height: 510px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+img {
+    border-style: none;
+    width: 100%;
+}
+
+html body a:focus, html body a:hover {
+    text-decoration: none;
+    color: #faa74a;
+}
+
+.search-list>li.active, .search-list>li:hover {
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.25);
+}
+
+.search-list>li {
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search-list>li.active .btn, .search-list>li:hover .btn {
+    visibility: visible;
+}
+
+
+.search-list>li .book-appointment {
+    visibility: hidden;
+    position: absolute;
+    float: right;
+}
+
+@media only screen and (max-width: 767px) {
+    .search-list>li .book-appointment {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 40px;
+        width: 100%;
+        display: block;
+        right: 0;
+        visibility: visible;
+    }
+    p {
+        line-height: normal;
+        margin-bottom: 1rem;
+    }
+
+    .grey-text {
+        padding-top: 0px;
+        color: #6d6e70;
+    }
+    
+    .font12 {
+        font-size: 1.2rem !important;
+        margin: -1px;
+    }
+    
+    h5{
+        font-family: DINPro-Medium;
+        color: #1d2d3d;
+        font-size: 1.25rem;
+        font-size: 1.8rem !important;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.2;
+        color: inherit;
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+
+    .m-1 {
+        margin-top: -20px;
+        text-align: center;
+    }
+    
+    .active {
+        display: block;
+        box-shadow: 2px;
+        height: 300px;
+        background-color: whitesmoke;
+        box-sizing: border-box;
+    }
+    .active:hover {
+        display: block;
+        width: 100%;
+        height: 300px;
+        box-shadow: 1px;
+        background-color: darkgray;
+    }
+}
+.search-list>li .book-appointment {
+    visibility: hidden;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+    .search-list>li .btn {
+        visibility: visible;
+    }
+}
+
+.btn.btn-primary {
+    background: #faa74a;
+    border-color: #faa74a;
+    color: #fff;
+    display: none;
+    
+}
+.btn {
+    
+    display: none;
+    color: #fff;
+    line-height: 15px;
+    text-shadow: none;
+    line-height: normal;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-family: DINPro-Medium;
+}
+
+.checked {
+    color: orange;
+    vertical-align: middle;
+  }
+
+.btn .btn.btn-primary:hover {
+    background: #faa74a;
+    border-color: #faa74a;
+}
+.btn1 {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+    border-radius: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+.listing {
+    padding: 0px 30px;
+}
+
+.listing {
+    padding: 0 100px 50px;
+    overflow: hidden;
+}
+}
+
+
+div {
+    display: block;
+}
+
+.search-map {
+    position: fixed;
+    height: 100%;
+    width:100%;
+    background-size: cover;
+}
+
+.d-none {
+    display: block!important;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.h51 {
+    font-weight: bold;
+}
+
+.h51:hover {
+ color: orange;
+ cursor: pointer;
+}
+
+a:hover {
+    color: orange;
+}
+#map {
+    height: 480px;
+    width: 100%;
+    margin-top: 110px;
+  }
+  #book {
+    height: 500px;
+    width: 30%;
+    background-color: black;
+    color: beige;
+    display: none;
+  }
+
+/* right content styling ends here section-1 */
+
+
+
+
+/* right content styling here section-2 */
+
+
+
+/* booking box starts here */
+.ul_style {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#f8f9fa;
+  }
+
+  .avail{
+      background-color: #f8f9fa;
+      width: 100px;
+      
+      
+  }
+  
+  .li_style {
+    float: left;
+    border:1px solid;
+    border-radius: 20px;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  
+  
+  .active_style {
+    border-color: red;
+    background-color: #fff;
+    color: red;
+    width: 50px;
+    float: left;
+    border:1px solid;
+    border-radius: 20px;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  #avail_days{
+    border:1px solid green;
+    border-radius: 20px;
+    background-color:  #fff;
+    color: green;
+    width: 50px;
+  }
+
+  #avail{
+    width: 90px;
+    border-radius: 0px;
+    border:0;
+    width: 50px;
+    margin-right: 25px;
+    
+}
+
+
+
+.div2{
+    display: none;
+}
+
+
+.cross_button{
+    height: 30px;
+    float: right;
+    width: 100%;
+    margin: 10px;
+}
+
+
+
+.cancel_btn{
+    margin: 2px;
+    float: right;
+    background-color: #f8f9fa;
+}
+
+.buttons_area{
+    margin: 10px;
+}
+
+.btn_style{
+    background-color: #f8f9fa;
+    border: 0;
+
+}
+
+.btn_style:hover{
+    color: burlywood;
+}
+
+.calender_div{
+  margin-left: 20px;
+  margin-bottom: 5px;
+ }
+ 
+ .calender_div_style{
+   border: 0px;
+   background-color: #f8f9fa;
+ }
+
+.btn_styling{
+float: right;
+width:200px;
+height: 30px;
+text-align: center;
+background-color: coral;
+}
+
+.btn_styling:hover{
+ background-color: chocolate;
+}
+
+.bottom_data{
+  width: 98%;
+  height: 30px;
+  margin-top: 110px;
+  
+}
+
+.bottom_style_left{
+float: left;
+width: 40%;
+}
+
+.bottom_style_right{
+  float:right;
+  width: 40%;
+}
+/* booking box ends here */
+
+/* map styling ends here */
+
+/* list coding */
+.timing_list{
+ border-radius: 0;
+ width: 120px;
+ padding-top:8px; 
+ margin-top: 5px;
+}
+
+.timing_list:hover{
+  background-color: cornsilk;
+}
+
+.ameties_div {
+  height: 45px;
+  width: 40%;
+  display: none;
+  margin-left: 18px;
+
+}
+
+/* time_slot_div_ styling */
+
+.time_slot_div_{
+ width:97%;
+ margin-left: 15px;
+ margin-top:5px;
+ height: 40px;
+
+}
+
+.time_morning{
+height: 30px;
+margin-left: 5px;
+background-color: aquamarine;
+width: 100px;
+display: block;
+float: left;
+}
+
+.time_afternoon{
+  height: 30px;
+  margin-left: 5px;
+  background-color: aquamarine;
+  width: 100px;
+  display: none;
+  float: left;
+}
+
+.time_evening{
+  height: 30px;
+  margin-left: 5px;
+  background-color: aquamarine;
+  width: 100px;
+  display: none;
+  float: left;
+}
+
+.time_night{
+  height: 30px;
+  margin-left: 5px;
+  background-color: aquamarine;
+  width: 100px;
+  display: none;
+  float: left;
+}
+
+
+
+/* right content styling ends here section-2 */
+
+
+
+
+/* footer content styling here */
+.footer {
+    background-color: rgb(28, 28, 138);
+    height: 50px;
+    width: 100%;
+}
+/* Style the header links */
+/* .footer a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+} */
+
+.footer-right {
+    padding-top: 15px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.footer-right a{
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+}
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.footer a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    height: 100%;
+}
+
+/* Change the background color on mouse-over */
+.footer a:hover {
+    color:   springgreen;
+    font-weight: bolder;
+}
+/* Style the active/current link*/
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+    .footer a {
+            float: none;
+            display: block;
+            text-align: left;
+    }
+    .footer-right {
+            float: none;
+    }
+    .footer .search-container {
+            float: none;
+    }
+    .footer a,
+    .footer input[type=text],
+    .footer .search-container button {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+    }
+    .footer input[type=text] {
+            border: 1px solid #ccc;
+    }
+}
+.search-container {
+    float: right;
+}
+.footer input[type=text] {
+    padding: 3px;
+    margin-top: 7px;
+    font-size: 17px;
+    border: none;
+}
+.footer .search-container button {
+    float: right;
+    padding: 3px 10px;
+    margin-top: 7px;
+    margin-right: 16px;
+    margin-left: 5px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.footer .search-container button:hover {
+    background: rgba(248, 246, 246, 0.555);
+}
+
+/* footer content styling ends here*/
+
+.time_slot_btns{
+    margin-top:10px;
+    margin-left: 5px;
+    background-color: antiquewhite;
+    border: 1px slateblue solid;
+    border-radius: 5px;
+    width: 60px;
+    height: 35px;
+}
+.time_slot_btns:hover{
+    background-color: aquamarine;
+}
+
+/* footer styling*/
+
